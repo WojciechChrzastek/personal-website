@@ -37,6 +37,7 @@ li.col-sm h4 {
 }
 
 section {
+  background-color: #fff;
   padding: 5% 20%;
   display: flex;
   flex-direction: column;
@@ -45,4 +46,35 @@ section {
 
 p {
   text-align: justify;
+}
+
+#top {
+  background-color: transparent;
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+#top .background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-color: #1a77c1;
+}
+
+#top .background-image:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #414a4f;
+  opacity: 0.75;
 }
