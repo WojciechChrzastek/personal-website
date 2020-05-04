@@ -19,19 +19,32 @@
   </head>
   <body>
     <header>
-      <a href="#top">
-        <div class="start">
-          <h2>Wojciech Chrzastek</h2>
-          <h3>Java developer</h3>
-        </div>
-      </a>
-      <nav>
-        <li><a href="#technologies">Technologies</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#"><div>Wojciech Chrzastek<small><br>Java developer</small></div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#technologies">Technologies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
       </nav>
     </header>
     <section id="top">
@@ -54,36 +67,36 @@
         barkadeer splice the main brace pirate. Keel chase guns draught coffer
         stern Davy Jones' Locker gaff belaying pin Cat o'nine tails quarter.
       </p>
-      <ul class="grid">
-        <li>
+      <ul class="row">
+        <li class="col-sm">
           <a href="https://www.java.com/" target="_blank">
             <img
             src="images/java-vertical-alt.svg"
             title="java-logo"
             alt="java-logo"
-            class="round"
+            class="img-fluid"
             />
         </a>
           <h4>Java</h4>
         </li>
-        <li>
+        <li class="col-sm">
           <a href="https://www.w3schools.com/tags/default.asp" target="_blank">
           <img
             src="images/html5-alt.svg"
             title="html5-logo"
             alt="html5-logo"
-            class="round"
+            class="img-fluid"
           />
         </a>
           <h4>HTML5</h4>
         </li>
-        <li>
+        <li class="col-sm">
           <a href="https://www.w3schools.com/cssref/default.asp" target="_blank">
           <img
             src="images/css3-alt01.png"
             title="css3-logo"
             alt="css3-logo"
-            class="round"
+            class="img-fluid"
           />
         </a>
           <h4>CSS3</h4>
@@ -100,36 +113,36 @@
         conduct topmast spirits heave down spike dance the hempen jig splice the
         main brace coffer loaded to the gunwalls.
       </p>
-      <ul class="grid">
-        <li>
+      <ul class="row">
+        <li class="col-sm">
           <a href="https://www.jetbrains.com/idea/" target="_blank">
           <img
             src="images/intelij-color.svg"
             title="intelij-logo"
             alt="intelij-logo"
-            class="round"
+            class="img-fluid"
           />
         </a>
           <h4>InteliJ IDEA</h4>
         </li>
-        <li>
+        <li class="col-sm">
           <a href="https://git-scm.com" target="_blank">
           <img
             src="images/git-color-alt01.png"
             title="git-logo"
             alt="git-logo"
-            class="round"
+            class="img-fluid"
           />
         </a>
           <h4>Git</h4>
         </li>
-        <li>
+        <li class="col-sm">
           <a href="https://www.atlassian.com/software/jira" target="_blank">
           <img
             src="images/jira-color-alt02.svg"
             title="jira-logo"
             alt="jira-logo"
-            class="round"
+            class="img-fluid"
           />
         </a>
           <h4>Jira</h4>
@@ -145,14 +158,14 @@
         Gold Road tackle jib. Jolly Roger trysail scuppers Pirate Round fluke
         Davy Jones' Locker Shiver me timbers provost come about cable.
       </p>
-      <ul class="grid">
+      <ul class="row">
         <a href="https://github.com/WojciechChrzastek/order-handler" target="_blank">
-          <li>
+          <li class="col-sm">
           <img
             src="images/github-dark.png"
             title="github-logo"
             alt="github-logo"
-            class="round"
+            class="img-fluid"
           />
           <h4>Order handler</h4>
         </a>
@@ -162,12 +175,12 @@
           </p>
         </li>
         <a href="https://github.com/WojciechChrzastek/Taskeo" target="_blank">
-          <li>
+          <li class="col-sm">
           <img
             src="images/github-dark.png"
             title="github-logo"
             alt="github-logo"
-            class="round"
+            class="img-fluid"
           />
           <h4>Taskeo</h4>
         </a>
@@ -177,12 +190,12 @@
           </p>
         </li>
         <a href="https://github.com/WojciechChrzastek/personal-website" target="_blank">
-          <li>
+          <li class="col-sm">
           <img
             src="images/github-dark.png"
             title="github-logo"
             alt="github-logo"
-            class="round"
+            class="img-fluid"
           />
           <h4>Personal website</h4>
         </a>
