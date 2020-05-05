@@ -126,3 +126,24 @@ footer a:hover {
 input:focus:valid {
   box-shadow: 0 0 5px 1px green;
 }
+
+/*-----SCROLL-TO-TOP-----*/
+#scrollButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+#scrollButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
