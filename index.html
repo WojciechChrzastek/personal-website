@@ -224,18 +224,26 @@
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <h3>Contact form</h3>
       <p>
-        Contact form with validated text fields, radio buttons, roll-down lists,
-        buttons
+        Feel free to use the form below to contact me.<br>
+        Fields marked with an * are required
       </p>
-      <p>
-        Spike cackle fruit heave down Buccaneer quarter lass case shot piracy
-        mizzen gabion. Chandler Cat o'nine tails keel yardarm lugsail plunder
-        piracy long clothes reef American Main. Jolly Roger swab Gold Road
-        grapple careen execution dock Brethren of the Coast splice the main
-        brace trysail sloop.
-      </p>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Name*</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address*</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <small class="form-text text-muted">Your email will not be shared with anyone.</small>
+        </div>
+        <div class="form-group">
+          <label for="message">Message*</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </section>
     <footer>
       <ul class="list-group list-group-horizontal">
