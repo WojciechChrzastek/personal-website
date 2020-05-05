@@ -90,11 +90,12 @@ footer {
   align-items: center;
 }
 
-footer ul,
 footer li {
   align-items: center;
   list-style-type: none;
   color: rgba(0, 0, 0, 0.9);
+  font-size: 32px;
+  margin: 10px;
 }
 
 footer a {
