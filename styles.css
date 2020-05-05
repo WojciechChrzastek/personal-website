@@ -14,6 +14,15 @@ section {
   align-items: stretch;
 }
 
+section a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+section a:hover {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+
 h2 {
   text-align: center;
 }
