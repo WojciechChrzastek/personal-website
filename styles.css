@@ -29,6 +29,8 @@ h2 {
 
 p {
   text-align: justify;
+  max-width: 710px;
+  align-self: center;
 }
 
 ul {
