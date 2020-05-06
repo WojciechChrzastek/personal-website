@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-collapse,
 .navbar-brand {
   flex: 1;
