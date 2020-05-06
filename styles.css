@@ -2,14 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar-collapse,
-.navbar-brand {
-  flex: 1;
-  margin: auto !important;
-  display: flex;
-  justify-content: space-around;
-}
-
 section {
   background-color: #fff;
   padding-top: 90px;
