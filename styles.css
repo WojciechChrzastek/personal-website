@@ -156,6 +156,17 @@ li.col-sm-4 {
   margin-bottom: 0px;
 }
 
+/*-----ABOUT-ME-----*/
+.about-me {
+  max-width: 850px;
+}
+
+#about-me .img-fluid {
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 0;
+}
+
 /*-----CONTACT-----*/
 #contact > p {
   align-self: auto;
