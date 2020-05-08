@@ -46,10 +46,6 @@ ul {
   padding-bottom: 10px;
 }
 
-li.col-sm-4 {
-  padding: 30px 30px;
-}
-
 /*-----TOP-----*/
 
 #top {
@@ -133,7 +129,6 @@ li.col-sm-4 {
 }
 
 /*-----TECHNOLOGIES-& TOOLS----*/
-
 #technologies li,
 #tools li {
   padding: 30px 20px;
@@ -148,12 +143,12 @@ li.col-sm-4 {
 }
 
 /*-----PROJECTS-----*/
-#projects ul {
+.projects {
   max-width: 850px;
 }
 
-#projects p {
-  margin-bottom: 0px;
+#projects li {
+  min-width: 250px;
 }
 
 /*-----ABOUT-ME-----*/
