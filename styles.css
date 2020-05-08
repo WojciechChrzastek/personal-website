@@ -23,6 +23,11 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  text-align: center;
+  font-size: larger;
+}
+
 p {
   text-align: justify;
   max-width: 850px;
@@ -125,6 +130,21 @@ li.col-sm-4 {
   border: 0.2em solid #fff;
   border-radius: 2em;
   opacity: 0.5;
+}
+
+/*-----TECHNOLOGIES-& TOOLS----*/
+
+#technologies li,
+#tools li {
+  padding: 30px 20px;
+  position: relative;
+}
+
+#technologies .img-fluid,
+#tools .img-fluid {
+  height: auto;
+  max-width: 120px;
+  padding-bottom: 10px;
 }
 
 /*-----PROJECTS-----*/
