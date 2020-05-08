@@ -58,6 +58,7 @@ li.col-sm-4 {
 
 #top > p {
   text-align: center;
+  justify-self: center;
 }
 
 #top .background-image {
@@ -80,6 +81,50 @@ li.col-sm-4 {
   height: 100%;
   background-color: #414a4f;
   opacity: 0.75;
+}
+
+/*-----SCROLL-ICON-----*/
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0.75em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.scroll-icon-dot {
+  position: absolute;
+  left: 50%;
+  background: #fff;
+  height: 0.5em;
+  width: 0.5em;
+  top: 0.6em;
+  margin-left: -0.25em;
+  border-radius: 50%;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  animation: scroll 2s ease-out infinite;
+}
+
+.scroll-icon {
+  position: absolute;
+  top: 90%;
+  height: 3em;
+  width: 2em;
+  border: 0.2em solid #fff;
+  border-radius: 2em;
+  opacity: 0.5;
 }
 
 /*-----PROJECTS-----*/
