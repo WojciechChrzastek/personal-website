@@ -82,7 +82,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: #414a4f;
-  opacity: 0.75;
+  opacity: 0.55;
 }
 
 /*-----SCROLL-ICON-----*/
@@ -234,4 +234,51 @@ footer a:hover {
 
 #scrollButton:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*-----COLORS-----*/
+#navbar {
+  background-color: #007bba !important;
+}
+
+footer {
+  background-color: #1f2a2d !important;
+}
+
+section {
+  background-color: #e6f1f3;
+}
+
+.btn {
+  color: #fff !important;
+  background-color: #007bba !important;
+  border-color: #007bba !important;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: rgba(0, 123, 186, 0.8) !important;
+  border-color: rgba(0, 123, 186, 0.8) !important;
+}
+
+#scrollButton:hover {
+  background-color: rgba(0, 123, 186, 0.8) !important;
+}
+
+#scrollButton {
+  background-color: rgba(0, 123, 186, 0.5) !important;
+}
+
+footer {
+  color: rgba(230, 241, 243, 0.5) !important;
+}
+
+footer a {
+  opacity: 0.9 !important;
+  color: rgba(230, 241, 243, 0.5) !important;
+}
+
+footer a:hover {
+  opacity: 1;
+  color: rgba(230, 241, 243, 0.8) !important;
 }
