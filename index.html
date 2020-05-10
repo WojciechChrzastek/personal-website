@@ -1,3 +1,38 @@
+<?php
+  require 'phpmailer/PHPMailer.php';
+  require 'phpmailer/SMTP.php';
+  require 'phpmailer/Exception.php';
+
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\SMTP;
+  use PHPMailer\PHPMailer\Exception;
+
+  $mail = new PHPMailer();
+  $mail->Host="smpt.abc.com";
+  $mail->Port="587";
+  $mail->SMTPAuth="true";
+  $mail->SMTPSecure="tls";
+
+  $mail->Username="xyz@abc.com";
+  $mail->Password="12345";
+
+  $mail->setFrom("xyz@abc.com");
+  $mail->addAddress("xyz@abc.com");
+  $mail->addReplyTo("xyz@abc.com");
+
+  $mail->isHTML(true);
+  $mail->Subject="Test PHP Mailer Subject";
+  $mail->Body="blablabla";
+
+  if($mail->send()){
+    echo "Message has been sent.";
+  }
+  else {
+    echo "Message could not be sent!";
+  }  
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
