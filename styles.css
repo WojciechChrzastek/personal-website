@@ -200,10 +200,6 @@ label.error {
   color: #dc3545;
 }
 
-.valid {
-  background-color: blue !important;
-}
-
 /*-----FOOTER-----*/
 footer {
   display: flex;
