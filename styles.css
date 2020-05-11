@@ -185,8 +185,23 @@ form {
   padding: 0 !important;
 }
 
-input:focus:valid {
-  box-shadow: 0 0 5px 1px green;
+input:focus:valid,
+textarea:focus:valid {
+  box-shadow: 0 0 5px 1px #28a745;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+  box-shadow: 0 0 5px 1px #dc3545;
+}
+
+label.error {
+  font-size: smaller;
+  color: #dc3545;
+}
+
+.valid {
+  background-color: blue !important;
 }
 
 /*-----FOOTER-----*/
