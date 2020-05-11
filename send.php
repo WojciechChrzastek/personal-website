@@ -8,11 +8,25 @@ use PHPMailer\ PHPMailer\ PHPMailer;
 use PHPMailer\ PHPMailer\ SMTP;
 use PHPMailer\ PHPMailer\ Exception;
 
-if (empty($_POST['honey'])) {
-
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+
+    //fields validation
+    if (empty(['name'])) {
+        header("location: http://chrzastek.net/#contact");
+    }
+
+    if (empty(['email'])) {
+        header("location: http://chrzastek.net/#contact");
+    }
+
+    if (empty(['message'])) {
+        header("location: http://chrzastek.net/#contact");
+    }
+
+    //honeypot validation
+if (empty($_POST['honey'])) {
 
     $mail = new PHPMailer(true);
 
