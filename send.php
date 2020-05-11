@@ -1,12 +1,8 @@
 <?php
 
-$name = filter_var$_POST(['name'], FILTER_SANITIZE_STRING);
-$email = filter_var$_POST(['email'], FILTER_SANITIZE_STRING);
-$message = filter_var$_POST(['message'], FILTER_SANITIZE_STRING);
-
-echo $name;
-echo $email;
-echo $message;
+$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+$email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -39,11 +35,11 @@ $mail->addReplyTo("xyz@zxc.com");
 $mail->addAddress("recipent@qwe.com");
 
 //Message body
-$body = "<p><strong>Hello</strong>, you have recieved an enquiry from " . $name . " the message is " . $message . "</p>";
+$body = "<p><strong>Hello</strong>, you have recieved an enquiry from " . $name . ". The message is: " . $message . "</p>";
 
 //Content
 $mail->isHTML(true); 
-$mail->Subject = "Enquiry from" . $name;
+$mail->Subject = "chrzastek.net contact form enquiry from: " . $name;
 $mail->Body = "$body";
 $mail->AltBody = "strip_tags($body)";
 
