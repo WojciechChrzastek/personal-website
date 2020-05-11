@@ -32,7 +32,7 @@ $mail->FromName = $name;
 $mail->addReplyTo = $email;
 
 //Recipent
-$mail->addAddress("recipent@qwe.com");
+$mail->addAddress("w.chrzastek@gmail.com");
 
 //Message body
 $body = "<p><strong>Hello</strong>, you have recieved an enquiry from " . $name . ". The message is: " . $message . "</p>";
