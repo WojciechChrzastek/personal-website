@@ -21,7 +21,7 @@ if (empty($_POST['honey'])) {
         //Server settings
         $mail - > SMTPDebug = 2;
         //$mail->isSMTP();
-        $mail - > Host = "smpt.abc.com";
+        $mail - > Host = "smtp.abc.com";
         $mail - > SMTPAuth = "true";
         $mail - > Username = "mail@abc.com";
         $mail - > Password = "12345";
