@@ -39,7 +39,7 @@ $mail->addReplyTo("xyz@zxc.com");
 $mail->addAddress("recipent@qwe.com");
 
 //Message body
-$body = "<p><strong>Hello</strong>, you have recieved an enquiry from " . $name " the message is " . $message "</p>";
+$body = "<p><strong>Hello</strong>, you have recieved an enquiry from " . $name . " the message is " . $message . "</p>";
 
 //Content
 $mail->isHTML(true); 
@@ -47,10 +47,9 @@ $mail->Subject = "Enquiry from" . $name;
 $mail->Body = "$body";
 $mail->AltBody = "strip_tags($body)";
 
-
-
 $mail->send();
-echo "Message has been sent!";
+// echo "Message has been sent!";
+header("location: http://chrzastek.net/#contact");
 
 } catch (Exception $e) {
   echo "Message could not be sent!";
