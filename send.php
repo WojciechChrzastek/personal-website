@@ -29,6 +29,7 @@ use PHPMailer\ PHPMailer\ Exception;
 if (empty($_POST['honey'])) {
 
     $mail = new PHPMailer(true);
+    $mail -> CharSet = "UTF-8";
 
     try {
 
