@@ -252,7 +252,7 @@
 
     <section id="contact" class="container-fluid">
         <h2>Contact</h2>
-        <form class="col-sm-4">
+        <form class="col-sm-4" method="POST" action="send.php">
             <p>
                 Feel free to use the form below to contact me.
                 <br>
@@ -261,11 +261,11 @@
             <div class="row">
                 <div class="col-sm-6">
                     <label for="name">Name*</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" required minlength="3" maxlength="50" pattern="[a-zA-Z]+">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required minlength="3" maxlength="50" pattern="[a-zA-Z]+">
                 </div>
                 <div class="col-sm-6">
                     <label for="email">Email address*</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" required minlength="3" maxlength="50">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required minlength="3" maxlength="50">
                     <small class="form-text text-muted">Your email will not be shared with anyone.</small>
                 </div>
             </div>
