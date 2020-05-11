@@ -1,9 +1,5 @@
 <?php
 
-$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
@@ -11,6 +7,12 @@ require 'phpmailer/Exception.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+
+if(empty($_POST['honey'])){
+
+$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+$email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
 $mail = new PHPMailer(true);
 
@@ -50,6 +52,8 @@ header("location: http://chrzastek.net/#contact");
 } catch (Exception $e) {
   echo "Message could not be sent!";
   echo "Mailer error: ".$mail->ErrorInfo;
+}
+
 }
 
 ?>
