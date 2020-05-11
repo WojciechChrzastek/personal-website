@@ -27,9 +27,9 @@ $mail->SMTPSecure = "tls";
 $mail->Port="587";
 
 //User data
-$mail->From =( "xyz@zxc.com");
-$mail->FromName = ("Jon Snow");
-$mail->addReplyTo("xyz@zxc.com");
+$mail->From = $email;
+$mail->FromName = $name;
+$mail->addReplyTo = $email;
 
 //Recipent
 $mail->addAddress("recipent@qwe.com");
@@ -39,7 +39,7 @@ $body = "<p><strong>Hello</strong>, you have recieved an enquiry from " . $name 
 
 //Content
 $mail->isHTML(true); 
-$mail->Subject = "chrzastek.net contact form enquiry from: " . $name;
+$mail->Subject = "Your website contact form enquiry from: " . $name;
 $mail->Body = "$body";
 $mail->AltBody = "strip_tags($body)";
 
