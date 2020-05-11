@@ -1,4 +1,4 @@
-<? php
+<?php
 
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -19,22 +19,22 @@ if (empty($_POST['honey'])) {
     try {
 
         //Server settings
-        $mail - > SMTPDebug = 2;
+        $mail->SMTPDebug = 2;
         //$mail->isSMTP();
-        $mail - > Host = "smtp.abc.com";
-        $mail - > SMTPAuth = "true";
-        $mail - > Username = "mail@abc.com";
-        $mail - > Password = "12345";
-        $mail - > SMTPSecure = "tls";
-        $mail - > Port = "587";
+        $mail -> Host = "smtp.abc.com";
+        $mail -> SMTPAuth = "true";
+        $mail -> Username = "mail@abc.com";
+        $mail -> Password = "12345";
+        $mail -> SMTPSecure = "tls";
+        $mail -> Port = "587";
 
         //User data
-        $mail - > From = $email;
-        $mail - > FromName = $name;
-        $mail - > addReplyTo = $email;
+        $mail -> From = $email;
+        $mail -> FromName = $name;
+        $mail -> addReplyTo = $email;
 
         //Recipent
-        $mail - > addAddress("w.chrzastek@gmail.com");
+        $mail -> addAddress("w.chrzastek@gmail.com");
 
         //Message body
         $body = "<p><strong>Hello</strong>, you have recieved an enquiry from ".$name.
@@ -42,18 +42,18 @@ if (empty($_POST['honey'])) {
         "</p>";
 
         //Content
-        $mail - > isHTML(true);
-        $mail - > Subject = "Your website contact form enquiry from: ".$name;
-        $mail - > Body = "$body";
-        $mail - > AltBody = "strip_tags($body)";
+        $mail -> isHTML(true);
+        $mail -> Subject = "Your website contact form enquiry from: ".$name;
+        $mail -> Body = "$body";
+        $mail -> AltBody = "strip_tags($body)";
 
-        $mail - > send();
+        $mail -> send();
         // echo "Message has been sent!";
         header("location: http://chrzastek.net/#contact");
 
     } catch (Exception $e) {
         echo "Message could not be sent!";
-        echo "Mailer error: ".$mail - > ErrorInfo;
+        echo "Mailer error: ".$mail -> ErrorInfo;
     }
 
 }
