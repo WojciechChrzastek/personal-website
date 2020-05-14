@@ -215,13 +215,13 @@
                 <div class="col-sm-6">
                     <label for="name">Name*</label>
                     <input type="text" name="name" class="form-control" id="name" placeholder="Enter name"
-                     required pattern="[A-z0-9À-ž\s]{2,50}"
-                     title="Name should be 2 to 50 chacacters long.">
+                     required pattern="[A-z0-9À-ž\s]{2,50}" minlength="2" maxlength="50"
+                     title="Name should be 2 to 50 alphanumeric chacacters long." >
                 </div>
                 <div class="col-sm-6">
                     <label for="email">Email address*</label>
                     <input type="email" name="email" class="form-control" id="email" placeholder="Enter email"
-                     required minlength="3" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                     required minlength="6" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                      title="Please enter valid email address.">
                     <small class="form-text text-muted">Your email will not be shared with anyone.</small>
                 </div>
