@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89801646-2"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-89801646-2');
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Wojciech Chrzastek's personal website" />
@@ -216,7 +226,7 @@
                     <label for="name">Name*</label>
                     <input type="text" name="name" class="form-control" id="name" placeholder="Enter name"
                      required pattern="[A-z0-9À-ž\s]{2,50}" minlength="2" maxlength="50"
-                     title="Name should be 2 to 50 alphanumeric chacacters long." >
+                     title="Name should be 2 to 50 alphanumeric chacacters long.">
                 </div>
                 <div class="col-sm-6">
                     <label for="email">Email address*</label>
