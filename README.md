@@ -1,2 +1,2 @@
 # personal-website
-Frontend for my personal website
+My personal website.
