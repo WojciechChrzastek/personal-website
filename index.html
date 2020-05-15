@@ -271,67 +271,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/1cc53aee27.js" crossorigin="anonymous"></script>
-	<script>
-	    $('.navbar-nav>a').on('click', function() {
-	        $('.navbar-collapse').collapse('hide');
-	    });
-	</script>
-
-    <script>
-        mybutton = document.getElementById("scrollButton");
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
     <script src="js/jquery.validate.min.js"></script>
-    <script>
-    $("#contact-form").validate({
-        submitHandler: function(form) {
-            $.ajax({
-                dataType: 'JSON',
-                url: 'send.php',
-                type: 'POST',
-                data: $('#contact-form').serialize(),
-                beforeSend: function(xhr){
-                $('#submit').html('SENDING...');
-                },
-                success: function(response){
-                if(response){
-                    console.log(response);
-                    if(response['signal'] == 'ok'){
-                    $('#msg').html('<div class="alert alert-success">'+ response['msg']  +'</div>');
-                    $('input, textarea').val(function() {
-                        return this.defaultValue;
-                    });
-                    }
-                    else{
-                    $('#msg').html('<div class="alert alert-danger">'+ response['msg'] +'</div>');
-                    }
-                }
-                },
-                error: function(){
-                    $('#msg').html('<div class="alert alert-danger">Error. Please try again later. </div>');
-                },
-                complete: function(){
-                    $('#submit').html('Submit');
-                }
-            });
-        }
-    });
-    </script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
