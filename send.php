@@ -22,7 +22,7 @@ if($_POST['honey'] === "" && $name !== "" && $email !== "" && $message !== ""){
         $mail = new PHPMailer();
         $mail -> CharSet = "UTF-8";
         // $mail -> SMTPDebug = 2;
-        $mail->isSMTP();
+        // $mail- > isSMTP();
         $mail -> Host = "smtp.abc.com";
         $mail -> SMTPAuth = "true";
         $mail -> Username = "mail@abc.com";
