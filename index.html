@@ -215,7 +215,7 @@
 
     <section id="contact" class="container-fluid">
         <h2>Contact</h2>
-        <form class="col-sm-4" id="contact-form" method="POST" action="send.php">
+        <form class="col-sm-4" id="contact-form">
             <p>
                 Feel free to use the form below to contact me.
                 <br>
@@ -242,9 +242,11 @@
                  required></textarea>
             </div>
 
-            <!-- Super-simple antispam -->
+            <!-- Super-simple honeypot antispam -->
             <input type="hidden" name="honey">
-            <!-- Super-simple antispam -->
+            <!-- Super-simple honeypot antispam -->
+
+            <div id="msg"></div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -296,8 +298,40 @@
     </script>
     <script src="js/jquery.validate.min.js"></script>
     <script>
-        $("#contact-form").validate();
-        </script>
+    $("#contact-form").validate({
+        submitHandler: function(form) {
+            $.ajax({
+                dataType: 'JSON',
+                url: 'send.php',
+                type: 'POST',
+                data: $('#contact-form').serialize(),
+                beforeSend: function(xhr){
+                $('#submit').html('SENDING...');
+                },
+                success: function(response){
+                if(response){
+                    console.log(response);
+                    if(response['signal'] == 'ok'){
+                    $('#msg').html('<div class="alert alert-success">'+ response['msg']  +'</div>');
+                    $('input, textarea').val(function() {
+                        return this.defaultValue;
+                    });
+                    }
+                    else{
+                    $('#msg').html('<div class="alert alert-danger">'+ response['msg'] +'</div>');
+                    }
+                }
+                },
+                error: function(){
+                    $('#msg').html('<div class="alert alert-danger">Error. Please try again later. </div>');
+                },
+                complete: function(){
+                    $('#submit').html('Submit');
+                }
+            });
+        }
+    });
+    </script>
 </body>
 
 </html>
