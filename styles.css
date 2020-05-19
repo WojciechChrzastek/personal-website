@@ -304,3 +304,36 @@ footer a:hover {
   opacity: 1;
   color: rgba(230, 241, 243, 0.8) !important;
 }
+
+/*-----CUSTOM-ICON-FONT-----*/
+@font-face {
+  font-family: "codewars";
+  src: url("fonts/codewars.eot?r0vrzk");
+  src: url("fonts/codewars.eot?r0vrzk#iefix") format("embedded-opentype"),
+    url("fonts/codewars.ttf?r0vrzk") format("truetype"),
+    url("fonts/codewars.woff?r0vrzk") format("woff"),
+    url("fonts/codewars.svg?r0vrzk#codewars") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-codewars {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "codewars" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-codewars:before {
+  content: "\e900";
+  font-size: 28px !important;
+}
