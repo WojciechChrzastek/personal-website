@@ -14,7 +14,7 @@ The website was created to be mobile friendly and it's fully responsive. Website
 - [Google Search Console Mobile-Friendly Test Tool](https://search.google.com/test/mobile-friendly?id=7pScDghWz9bYhT5_tCEfSw)
 - [Validator.nu (X)HTML5 Validator](https://html5.validator.nu/?doc=http%3A%2F%2Fchrzastek.net%2F)
 
-The site and it's content have been optimized for fast load times in order to provide decent user experience and to get highest achivable score on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=pl&url=http%3A%2F%2Fchrzastek.net%2F) and [GTMetrix](https://gtmetrix.com/reports/chrzastek.net/2IZjXicy). Optimization included use of minified resources and CDN where possible as well as working on image size, format and compression.
+The site and it's content have been optimized for fast load times in order to provide decent user experience and to get highest achivable score on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=pl&url=http%3A%2F%2Fchrzastek.net%2F) and [GTMetrix](https://gtmetrix.com/reports/chrzastek.net/2IZjXicy). Optimization included use of minified resources and CDN where possible, working on images size, format and compression as well as leveraging browser caching by setting request headers and resources caching times via .htaccess file.
 
 ## Contact form
 
