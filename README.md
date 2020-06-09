@@ -26,4 +26,4 @@ Website mainly uses features provided by the Bootstrap library. Some effects are
 
 - Implementation of animated hamburger menu navbar is based on a [solution](https://jsfiddle.net/Beaniie/s8rm1f0q/5/) published on jsfiddle.net by ["Beaniie"](https://jsfiddle.net/user/Beaniie/fiddles/).
 - Implementation of on-scroll navbar shrinking is based on a [solution](https://www.codeply.com/p/U6Us8AMnnM) published on codeply.com by ["skelly"](https://www.codeply.com/u/skelly).
-- Website uses some icons from Font Awesome 5 icon library and custom "Codewars" icon made by [Jake Hoffner](https://github.com/FortAwesome/Font-Awesome/issues/4809#issuecomment-255845386) and implemented as font using [IcoMoon App](https://icomoon.io/app/#/select).
+- Website uses some icons from [Font Awesome](https://fontawesome.com/) icon library and custom "Codewars" icon made by [Jake Hoffner](https://github.com/FortAwesome/Font-Awesome/issues/4809#issuecomment-255845386) and implemented as font using [IcoMoon App](https://icomoon.io/app/#/select).
