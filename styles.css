@@ -51,7 +51,6 @@ ul {
 }
 
 /*-----TOP-----*/
-
 #top {
   background-color: transparent;
   position: relative;
@@ -98,19 +97,21 @@ ul {
 }
 
 /*-----SCROLL-ICON-----*/
-
 @keyframes scroll {
   0% {
     transform: translateY(0);
     opacity: 1;
   }
+
   25% {
     opacity: 1;
   }
+
   75% {
     transform: translateY(0.75em);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 0;
@@ -326,13 +327,12 @@ footer a:hover {
 .icon-codewars {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "codewars" !important;
-  speak: none;
+  /* speak: none; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -344,8 +344,6 @@ footer a:hover {
 }
 
 /*-----ANIMATED-HAMBURGER-ICON-----*/
-/*-AUTHOR:-https://jsfiddle.net/Beaniie/s8rm1f0q/5/-*/
-
 .navbar-toggler {
   border: none;
   background: transparent !important;

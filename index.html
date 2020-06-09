@@ -5,40 +5,43 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89801646-2"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-     gtag('config', 'UA-89801646-2');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-89801646-2");
     </script>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="My personal website where you will find what technologies and tools I use as well as some example projects and a brief info about me." />
+    <meta name="description"
+        content="My personal website where you will find what technologies and tools I use as well as some example projects and a brief info about me." />
     <meta name="keywords" content="wojciech chrzastek" />
     <meta name="author" content="Wojciech Chrzastek" />
     <meta name="copyright" content="Wojciech Chrzastek" />
     <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css" />
-
     <title>Wojciech Chrzastek - Java developer</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="120">
-
     <header>
         <nav id="navbar" class="navbar navbar-dark bg-light fixed-top navbar-expand-sm py-3" data-toggle="affix">
             <div class="container">
                 <a class="navbar-brand" href="#top">
-                    <div>Wojciech Chrzastek<small class="font-weight-light"><br>Java developer</small></div>
+                    <div> Wojciech Chrzastek<small class="font-weight-light"><br />Java developer</small>
+                    </div>
                 </a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar top-bar"></span>
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
                     <span class="sr-only">Toggle navigation</span>
-                  </button>
+                </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="#technologies">Technologies</a>
@@ -51,27 +54,26 @@
             </div>
         </nav>
     </header>
-
-    <button onclick="topFunction()" id="scrollButton" title="Scroll up"><i class="fas fa-angle-up"></i></i></button>
-
+    <button onclick="topFunction()" id="scrollButton" title="Scroll up">
+        <i class="fas fa-angle-up"></i>
+    </button>
     <section id="top" class="container-fluid">
         <div class="background-image" style="background-image: url('img/java-bromo.jpg');"></div>
         <div id="welcome">
             <h1>Welcome to Java!!</h1>
-            <p>
-            You're looking at the iconic view of Bromo-Tengger-Semeru volcanic complex on Java island, Indonesia.<br> Have you been there? It's a trully stunning landscape!
-            </p>
+            <p> You're looking at the iconic view of Bromo-Tengger-Semeru volcanic complex on Java island,
+                Indonesia.<br /> Have you been there? It's a trully stunning landscape! </p>
         </div>
         <div class="scroll-icon d-none d-xl-block d-lg-block d-md-block">
             <span class="scroll-icon-dot"></span>
         </div>
     </section>
-
     <section id="technologies" class="container-fluid">
         <h2>Technologies</h2>
-        <p>
-            My technology stack is based on Java language including it's major frameworks and libraries like Spring or JUnit. To deal with databases I use MySQL and Hibernate if needed. Regarding my skills in website development I am able to create simple, properly made and standards complying frontend for applications. For that purpose I use HTML5, CSS3 with Bootstrap and some JS scripts.
-        </p>
+        <p> My technology stack is based on Java language including it's major frameworks and libraries like Spring or
+            JUnit. To deal with databases I use MySQL and Hibernate if needed. Regarding my skills in website
+            development I am able to create simple, properly made and standards complying frontend for applications. For
+            that purpose I use HTML5, CSS3 with Bootstrap and some JS scripts. </p>
         <ul class="row justify-content-center align-items-center text-center">
             <li class="col-auto">
                 <a href="https://www.java.com/" target="_blank">
@@ -91,7 +93,6 @@
                 </a>
                 <h4>JUnit 5</h4>
             </li>
-
             <li class="col-auto">
                 <a href="https://www.mysql.com/" target="_blank">
                     <img src="img/mysql.png" title="mysql-logo" alt="mysql-logo" class="img-fluid" />
@@ -126,12 +127,15 @@
             </li>
         </ul>
     </section>
-
     <section id="tools" class="container-fluid">
         <h2>Tools</h2>
-        <p>
-            I'm familiar with highly rated and well known tools used in proffesional software development. With some of them, like Git, I&nbsp;deal on daily basis. It is essential in every project I create. Use of other tools, like IDE's, depend on what I am currently working on. If there is Java involved - there can be only one right choice - JetBrains InteliJ IDEA. If it's just simple website development - I&nbsp;prefer more lightweight options like Visual Studio Code. Issue trackers like JIRA also are not a mystery for me, but honestly - is there anyone that uses it for self-managed, independent, non-commercial projects? I'm not so sure about that :) Oh! And there's the Stack Overflow - it's like a developer's multitool, isn't it?
-        </p>
+        <p> I'm familiar with highly rated and well known tools used in proffesional software development. With some of
+            them, like Git, I&nbsp;deal on daily basis. It is essential in every project I create. Use of other tools,
+            like IDE's, depend on what I am currently working on. If there is Java involved - there can be only one
+            right choice - JetBrains InteliJ IDEA. If it's just simple website development - I&nbsp;prefer more
+            lightweight options like Visual Studio Code. Issue trackers like JIRA also are not a mystery for me, but
+            honestly - is there anyone that uses it for self-managed, independent, non-commercial projects? I'm not so
+            sure about that :) Oh! And there's the Stack Overflow - it's like a developer's multitool, isn't it? </p>
         <ul class="row justify-content-center align-items-center text-center">
             <li class="col-auto">
                 <a href="https://www.jetbrains.com/idea/" target="_blank">
@@ -165,120 +169,121 @@
             </li>
         </ul>
     </section>
-
     <section id="projects" class="container-fluid">
         <h2>Projects</h2>
-        <p>
-            All my projects are available on my <a href="https://github.com/WojciechChrzastek/" target="_blank">GitHub account</a>. Feel free to check out the sourcecode and clone or download it. Below you will find links to the code I managed to produce lately.
-        </p>
-        <ul class="row  row justify-content-around text-center align-items-top projects">
+        <p> All my projects are available on my <a href="https://github.com/WojciechChrzastek/" target="_blank">GitHub
+                account</a>. Feel free to check out the sourcecode and clone or download it. Below you will find links
+            to the code I managed to produce lately. </p>
+        <ul class="row row justify-content-around text-center align-items-top projects">
             <li class="col">
                 <a href="https://github.com/WojciechChrzastek/order-handler" target="_blank">
                     <img src="img/github-alt01.png" title="github-logo" alt="github-logo" class="img-fluid" />
                     <h4>Order handler</h4>
                 </a>
-                <p>
-                    CLI application written in Java. It&nbsp;takes data from .xml/.csv files, puts it into a database and uses it to generate .txt reports.
-                </p>
+                <p> CLI application written in Java. It&nbsp;takes data from .xml/.csv files, puts it into a database
+                    and uses it to generate .txt reports. </p>
             </li>
             <li class="col">
                 <a href="https://github.com/WojciechChrzastek/Taskeo" target="_blank">
                     <img src="img/github-alt01.png" title="github-logo" alt="github-logo" class="img-fluid" />
                     <h4>Taskeo</h4>
                 </a>
-                <p>
-                    RESTful web application that communicates with an external API. Made in Java with Spring and Hibernate ORM.
-                </p>
+                <p> RESTful web application that communicates with an external API. Made in Java with Spring and
+                    Hibernate ORM. </p>
             </li>
             <li class="col">
                 <a href="https://github.com/WojciechChrzastek/personal-website" target="_blank">
                     <img src="img/github-alt01.png" title="github-logo" alt="github-logo" class="img-fluid" />
                     <h4>Personal website</h4>
                 </a>
-                <p>
-                    Sourcecode of the website you're on right now. Created from scrach using basic HTML5, CSS3 and Bootstrap framework with a touch of JavaScript.
-                </p>
+                <p> Sourcecode of the website you're on right now. Created from scrach using basic HTML5, CSS3 and
+                    Bootstrap framework with a touch of JavaScript. </p>
             </li>
         </ul>
     </section>
-
     <section id="about-me" class="container-fluid">
         <h2>About me</h2>
         <div class="about-me">
-            <p>
-                My programming experience dates back to high-school experiments with Logo language, Turbo Pascal and ancient-style approach to website creation in HTML. Few years ago, in 2017 I decided to start coding again, but this time I meant a bit more serious stuff. After completing 9 months of intensive Java bootcamp and developing several own projects I feel much more confident as a programmer, especially in the backend area. After many years of working in the tourism industry I decided to settle down and find a job in the IT sector finally utilizing my developing skills.
-            </p>
+            <p> My programming experience dates back to high-school experiments with Logo language, Turbo Pascal and
+                ancient-style approach to website creation in HTML. Few years ago, in 2017 I decided to start coding
+                again, but this time I meant a bit more serious stuff. After completing 9 months of intensive Java
+                bootcamp and developing several own projects I feel much more confident as a programmer, especially in
+                the backend area. After many years of working in the tourism industry I decided to settle down and find
+                a job in the IT sector finally utilizing my developing skills. </p>
             <figure class="figure">
-                <img src="img/wojciech-chrzastek-monaco.jpeg" title="wojciech-chrzastek" alt="wojciech-chrzastek" class="figure-img img-fluid rounded">
-                <figcaption class="figure-caption text-right">That's me during the Monaco F1 GP race weekend in 2019</figcaption>
+                <img src="img/wojciech-chrzastek-monaco.jpeg" title="wojciech-chrzastek" alt="wojciech-chrzastek"
+                    class="figure-img img-fluid rounded" />
+                <figcaption class="figure-caption text-right"> That's me during the Monaco F1 GP race weekend in 2019
+                </figcaption>
             </figure>
-            <p>
-                Apart from the programming and tourism, I do love cars a lot and motorisation in general. I am interested especially about moderately popular cars from the late 90's/early 2000's. It was a fascinating era of already modern yet still mechanical-feeling cars which in a few years time will surely become desirable youngtimers.
-            </p>
+            <p> Apart from the programming and tourism, I do love cars a lot and motorisation in general. I am
+                interested especially about moderately popular cars from the late 90's/early 2000's. It was a
+                fascinating era of already modern yet still mechanical-feeling cars which in a few years time will
+                surely become desirable youngtimers. </p>
         </div>
     </section>
-
     <section id="contact" class="container-fluid">
         <h2>Contact</h2>
         <form class="col-sm-4" id="contact-form">
-            <p>
-                Feel free to use the form below to contact me.
-                <br>
-                Fields marked with an * are required
-            </p>
+            <p> Feel free to use the form below to contact me. <br /> Fields marked with an * are required </p>
             <div class="row">
                 <div class="col-sm-6">
                     <label for="name">Name*</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter name"
-                     required pattern="[A-z0-9À-ž\s]{2,50}" minlength="2" maxlength="50"
-                     title="Name should be 2 to 50 alphanumeric chacacters long.">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required
+                        pattern="[A-z0-9À-ž\s]{2,50}" minlength="2" maxlength="50"
+                        title="Name should be 2 to 50 alphanumeric chacacters long." />
                 </div>
                 <div class="col-sm-6">
                     <label for="email">Email address*</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email"
-                     required minlength="6" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                     title="Please enter valid email address.">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required
+                        minlength="6" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Please enter valid email address." />
                     <small class="form-text text-muted">Your email will not be shared with anyone.</small>
                 </div>
             </div>
             <div class="form-group">
                 <label for="message">Message*</label>
                 <textarea class="form-control" name="message" id="message" rows="3" placeholder="Enter message"
-                 required></textarea>
+                    required></textarea>
             </div>
-
             <!-- Super-simple honeypot antispam -->
-            <input type="hidden" name="honey">
+            <input type="hidden" name="honey" />
             <!-- Super-simple honeypot antispam -->
-
             <div id="msg"></div>
-
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </section>
-
     <footer>
         <ul class="list-group list-group-horizontal">
             <li>
                 <a href="https://github.com/WojciechChrzastek" target="_blank"><i class="fab fa-github-square"></i></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/wojciech-chrzastek/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/wojciech-chrzastek/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
             </li>
             <li>
-                <a href="https://www.codewars.com/users/WojciechChrzastek" target="_blank"><span class="icon-codewars"></span></a>
+                <a href="https://www.codewars.com/users/WojciechChrzastek" target="_blank"><span
+                        class="icon-codewars"></span></a>
             </li>
         </ul>
-        <p class="font-weight-light">&copy;<script>document.write(new Date().getFullYear())</script> Wojciech Chrzastek</p>
+        <p class="font-weight-light"> &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> Wojciech Chrzastek </p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1cc53aee27.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"
+        integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
