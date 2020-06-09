@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="120">
 
     <header>
-        <nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-light">
+        <nav id="navbar" class="navbar navbar-dark bg-light fixed-top navbar-expand-sm py-3" data-toggle="affix">
             <div class="container">
                 <a class="navbar-brand" href="#top">
                     <div>Wojciech Chrzastek<small class="font-weight-light"><br>Java developer</small></div>
@@ -56,10 +56,12 @@
 
     <section id="top" class="container-fluid">
         <div class="background-image" style="background-image: url('img/java-bromo.jpg');"></div>
-        <h1>Welcome to Java!!</h1>
-        <p>
+        <div id="welcome">
+            <h1>Welcome to Java!!</h1>
+            <p>
             You're looking at the iconic view of Bromo-Tengger-Semeru volcanic complex on Java island, Indonesia.<br> Have you been there? It's a trully stunning landscape!
-        </p>
+            </p>
+        </div>
         <div class="scroll-icon d-none d-xl-block d-lg-block d-md-block">
             <span class="scroll-icon-dot"></span>
         </div>

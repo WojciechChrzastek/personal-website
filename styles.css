@@ -59,11 +59,16 @@ ul {
   min-height: 100vh;
   color: #fff;
   text-align: center;
+  height: 100%;
 }
 
-#top > p {
+#welcome {
+  position: relative;
+  bottom: 10%;
+}
+
+#welcome > p {
   text-align: center;
-  justify-self: center;
 }
 
 #top .background-image {
@@ -128,7 +133,7 @@ ul {
 
 .scroll-icon {
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
   height: 3em;
   width: 2em;
   border: 0.2em solid #fff;
@@ -405,3 +410,31 @@ footer a:hover {
 .blue {
   background-color: #9999cc;
 }
+
+/*-----NAVBAR-SHNINK-ON-SCROLL-----*/
+html,
+body {
+  height: 100%;
+  padding-top: 50px;
+}
+
+.navbar {
+  -webkit-transition: padding 0.2s ease;
+  -moz-transition: padding 0.2s ease;
+  -o-transition: padding 0.2s ease;
+  transition: padding 0.2s ease;
+}
+
+.affix {
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+  -webkit-transition: padding 0.2s linear;
+  -moz-transition: padding 0.2s linear;
+  -o-transition: padding 0.2s linear;
+  transition: padding 0.2s linear;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+}
+
+/* section {
+  min-height: calc(100% - 70px);
+} */
