@@ -4,6 +4,8 @@ The code of my personal website created from scratch using [HTML5](https://www.w
 
 You can view it live under [chrzastek.net](http://chrzastek.net/) domain registered on [aftermarket.pl](https://www.aftermarket.pl/) name registrar. The website is hosted on my private hosting provided by [cyber_Folks](https://cyberfolks.pl/) operator.
 
+Currently I am working on creating a [WordPress](https://wordpress.org/) theme based on the design of my personal website. That is something new for me and involves some basic PHP knowledge, so I belive that's a great oportunity to learn something new. I created a [repository](https://github.com/WojciechChrzastek/guide-wp-theme) for this purpose, so feel free to check it out.
+
 ## Design and optimization
 
 The website was created to be mobile friendly and it's fully responsive. Website complies the latest HTML standards and was succesfully tested on the following validators:
@@ -14,7 +16,7 @@ The website was created to be mobile friendly and it's fully responsive. Website
 - [Google Search Console Mobile-Friendly Test Tool](https://search.google.com/test/mobile-friendly?id=7pScDghWz9bYhT5_tCEfSw)
 - [Validator.nu (X)HTML5 Validator](https://html5.validator.nu/?doc=http%3A%2F%2Fchrzastek.net%2F)
 
-The site and it's content have been optimized for fast load times in order to provide decent user experience and to get highest achivable score on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=pl&url=http%3A%2F%2Fchrzastek.net%2F) and [GTMetrix](https://gtmetrix.com/reports/chrzastek.net/2IZjXicy). Optimization included use of minified resources and CDN where possible, working on images size, format and compression as well as leveraging browser caching by setting request headers and resources caching times via .htaccess file.
+The site and it's content have been optimized for fast load times in order to provide decent user experience and to get highest achivable score on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=pl&url=http%3A%2F%2Fchrzastek.net%2F) and [GTMetrix](https://gtmetrix.com/reports/chrzastek.net/MTOpeeZa). Optimization included use of minified resources and CDN where possible, working on images size, format and compression as well as leveraging browser caching by setting request headers and resources caching times via .htaccess file.
 
 ## Contact form
 
