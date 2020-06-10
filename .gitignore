@@ -2,5 +2,10 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 
+.gitignore
+
 /images
 
+.htaccess
+img/resized_not_compressed/
+img/unresized/
